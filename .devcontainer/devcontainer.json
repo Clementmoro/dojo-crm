@@ -1,0 +1,20 @@
+{
+  "name": "Dojo CRM",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "postStartCommand": "npm install && npm run dev:demo",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "CRM Demo",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
